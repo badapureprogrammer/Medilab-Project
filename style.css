@@ -34,9 +34,6 @@
     --fs-15:15px;
     --fs-48:48px;
     --fs-24:24px;
-
-    /* Mobile Padding */
-    --sm-padding:15px 10px;
 }
 
 /*          Remove Default CSS          */
@@ -50,6 +47,11 @@ body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{
   margin: 0;
 }
 /* Remove default margin */
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--heading-clr);
+    font-family: var(--ff-heading);
+}
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],ol[role='list'] {
@@ -114,6 +116,40 @@ input,button,textarea,select {
 /*          Below mention media queries          */
 @media (min-width: 320px) and (max-width: 480px) {
     .header-section{
+        padding: 5px 0px;
+        border: 1px solid red;
+    }
+    .navbar{
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 12px;
+    }
+    .logo a{
+        font-weight: var(--fw-700);
+        font-size: var(--fs-30);
+        color: var(--heading-clr);
+        font-family: var(--ff-heading);
+
+    }
+    .appointment-btn a{
+        display: none;
+    }
+    .icon-box{
+        
+
+    }
+    .fa-bars,.fa-xmark{
+        font-size: 20px;
+        color:var(--heading-clr);
+        cursor: pointer;
+    }
+    .list-item{
+        display: none;
+
+    }
+    /* .header-section{
         position: relative;
         padding: var(--sm-padding);
         background-color: var(--contrast-clr);
@@ -164,7 +200,7 @@ input,button,textarea,select {
         margin-bottom: 20px;
         border: 1px solid black;
         font-family: var(--ff-nav);
-        font-weight: 600;
+        font-weight: 500;
 
     }
 
@@ -174,7 +210,7 @@ input,button,textarea,select {
 
     .list-item li a:active{
         color: var(--background-clr);
-    }
+    } */
 }
 /* Mobiles */
 
