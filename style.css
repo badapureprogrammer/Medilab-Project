@@ -68,6 +68,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -116,8 +117,9 @@ input,button,textarea,select {
 /*          Below mention media queries          */
 @media (min-width: 320px) and (max-width: 480px) {
     .header-section{
+        background-color: #ffffff;
         padding: 5px 0px;
-        border: 1px solid red;
+        box-shadow: 0px 0px 10px rgb(190, 188, 188);
     }
     .navbar{
         min-height: 30px;
@@ -125,6 +127,8 @@ input,button,textarea,select {
         align-items: center;
         justify-content: space-between;
         padding: 0px 12px;
+        background-color: #ffffff;
+
     }
     .logo a{
         font-weight: var(--fw-700);
@@ -137,8 +141,7 @@ input,button,textarea,select {
         display: none;
     }
     .icon-box{
-        
-
+        /* display: none; */
     }
     .fa-bars,.fa-xmark{
         font-size: 20px;
@@ -146,71 +149,42 @@ input,button,textarea,select {
         cursor: pointer;
     }
     .list-item{
-        display: none;
-
-    }
-    /* .header-section{
-        position: relative;
-        padding: var(--sm-padding);
-        background-color: var(--contrast-clr);
-    }
-    .navbar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .logo a{
-        font-weight: var(--fw-700);
-        text-decoration: none;
-        font-size: var(--fs-30);
-        color: var(--heading-clr);
-        font-family: var(--ff-heading);
-    }
-    .appointment-btn{
-        display: none;
-    }
-    .icon-box{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .fa-bars,.fa-xmark{
-        cursor: pointer;
-        font-size: 22px;
-    }
-    .list-item{
-        top: 75px;
-        left: 0;
-        position: absolute;
-        padding: 0px;
+        left: 0%;
+        top: 40px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid red;
-        margin: 0;
-
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        padding: 12px 12px 0px 12px;
+        background-color: #f0f8ff;
+        border-bottom: 0.5px solid rgb(12, 12, 12);
     }
-
-    .list-item li{
-        text-align: center;
-        width:70%;
-        margin-bottom: 20px;
-        border: 1px solid black;
-        font-family: var(--ff-nav);
-        font-weight: 500;
-
+    .media-navbar{
+        left: 100%;
+        top: 39px;
+        width: 100%;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        padding: 12px 12px 0px 12px;
+        background-color: #f0f8ff;
+        border-bottom: 0.5px solid rgb(12, 12, 12);
     }
-
-    .list-item li a{
+    .removeNavbar{
+        display: none;
+    }
+    .list-item li,.media-navbar li{
+        margin-bottom: 12px;
+    }
+    .list-item li a,.media-navbar li a{
+        font-size: 17px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.0125rem;
         color: var(--heading-clr);
+        font-weight: var(--fw-500);
+        font-family: var(--ff-nav);
     }
-
-    .list-item li a:active{
-        color: var(--background-clr);
-    } */
+    .list-item li a:hover{
+        color:var(--background-clr);
+    }
 }
 /* Mobiles */
 
