@@ -34,6 +34,11 @@
     --fs-15:15px;
     --fs-48:48px;
     --fs-24:24px;
+    --fs-logo-nav:30px
+    --fs-navlist:17px
+    --fs-icon:20px
+
+    /* Padding */
 }
 
 /*          Remove Default CSS          */
@@ -108,104 +113,127 @@ input,button,textarea,select {
 }
 
 .container{
-    width: 100%;
     margin: auto;
+    width: 100%;
     max-width: 1200px;
 }
 
+.header-section{
+    min-height: 60px;
+}
 
-/*          Below mention media queries          */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 a{
+    color: var(--heading-clr);
+    font-size: var(--fs-logo-nav);
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list
+.appointment-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appointment-section button{
+    border: none;
+    padding: 6px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--contrast-clr);
+    font-family: var(--ff-text);
+    margin-left: 30px;
+    background-color: var(--background-clr);
+}
+.menuIcon-container i{
+    cursor: pointer;
+    padding:7px;
+    font-size: var(--fs-icon);
+}
+.menu-container .fa-bars{
+    font-size: 20px;
+    transition: all 0.3s ease-in;
+    transform: rotate(180deg);
+}
+.menu-container .fa-xmark{
+    font-size: 20px;
+    transition: all 0.3s ease-in;
+    transform: rotate(90deg);
+}
+/* appointment-section */
+
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
     .header-section{
-        background-color: #ffffff;
-        padding: 5px 0px;
-        box-shadow: 0px 0px 10px rgb(190, 188, 188);
+        padding: 10px 0px;
+        box-shadow: 0px 0px 5px #808080;
     }
     .navbar{
-        min-height: 30px;
+        padding: 0px 8px;
+    }
+    .logo h1 a{
+        font-size: 30px;
+    }
+    .menu-container{
+
+    }
+    .nav-list{
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 0px 10px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 12px;
-        background-color: #ffffff;
-
-    }
-    .logo a{
-        font-weight: var(--fw-700);
-        font-size: var(--fs-30);
-        color: var(--heading-clr);
-        font-family: var(--ff-heading);
-
-    }
-    .appointment-btn a{
-        display: none;
-    }
-    .icon-box{
-        /* display: none; */
-    }
-    .fa-bars,.fa-xmark{
-        font-size: 20px;
-        color:var(--heading-clr);
-        cursor: pointer;
-    }
-    .list-item{
-        left: 0%;
-        top: 40px;
-        width: 100%;
+        flex-direction: column;
         position: absolute;
-        transition: all 0.3s ease-in-out;
-        padding: 12px 12px 0px 12px;
-        background-color: #f0f8ff;
-        border-bottom: 0.5px solid rgb(12, 12, 12);
-    }
-    .media-navbar{
-        left: 100%;
-        top: 39px;
-        width: 100%;
-        position: absolute;
-        transition: all 0.3s ease-in-out;
-        padding: 12px 12px 0px 12px;
-        background-color: #f0f8ff;
-        border-bottom: 0.5px solid rgb(12, 12, 12);
-    }
-    .removeNavbar{
-        display: none;
-    }
-    .list-item li,.media-navbar li{
-        margin-bottom: 12px;
-    }
-    .list-item li a,.media-navbar li a{
-        font-size: 17px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.0125rem;
-        color: var(--heading-clr);
-        font-weight: var(--fw-500);
-        font-family: var(--ff-nav);
-    }
-    .list-item li a:hover{
-        color:var(--background-clr);
-    }
-}
-/* Mobiles */
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .header-section{
-        background-color: blue;
-    }
-
-}
-/* Mobiles & Tablets */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .header-section{
-        background-color: tomato;
-    }
-}
-/* Laptops */
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-    .header-section{
+        transition: all 0.2s ease-in-out;
+        border-bottom: 0.5px solid #2c4964;
         background-color: aqua;
     }
+    .media-navbar{
+        left: -100%;
+        top: 50px;
+        width: 100%;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+        border-bottom: 0.5px solid #2c4964;
+
+    }
+    .nav-list li,.media-navbar li{
+        padding: 10px 0px;
+        font-weight: var(--fw-500);
+        font-family: var(--ff-nav);
+        font-size: var(--fs-navlist);
+    }
+    .nav-list li a,.media-navbar li a{
+        color: var(--heading-clr);
+    }
+    .appointment-section{
+
+    }
+    .appointment-section button{
+        display: none;
+    }
+    .menuIcon-container i{
+        cursor: pointer;
+        font-size: 20px;
+    }
 }
-/* Large Screens */
+
+

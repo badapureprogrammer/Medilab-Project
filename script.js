@@ -7,7 +7,7 @@ toggle.addEventListener("click",(e)=>{
     if(isTrusted){
         if(e.srcElement.className == "fa-solid fa-bars"){
             e.srcElement.className = "fa-solid fa-xmark";
-            list.className = "list-item"
+            list.className = "nav-list"
 
         }else if(e.srcElement.className == "fa-solid fa-xmark"){
             e.srcElement.className = "fa-solid fa-bars"
@@ -15,4 +15,12 @@ toggle.addEventListener("click",(e)=>{
         }
     }
 })
+
+
+let width = document.body.clientWidth;
+
+if(width < 700){
+
+    console.log(width,"herkserh")
+}
 // End of Navbar Functionality

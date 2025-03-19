@@ -11,28 +11,35 @@
     <title>Medilab</title>
 </head>
 <body>
-    <header class="header-section container">
-        <nav class="navbar">
+    <header class="header-section">
+        <nav class="navbar container">
             <div class="logo">
-                <a href="#hero">Medilab</a>
+                <h1><a href="#home">Medilab</a></h1>
             </div>
-            <div class="appointment-btn">
-                <a href="#appointment">Make an Appointment</a>
+            <div class="menu-container">
+                <ul class="nav-list" role="list" id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#department">Departments</a></li>
+                    <li><a href="#doctor">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="appointment-section">
+                    <button type="button">Make an Appontment</button>
+                    <div class="menuIcon-container">
+                        <i class="fa-solid fa-bars" id="toggle"></i>
+                    </div>
+                </div>
             </div>
-            <div class="icon-box">
-                <i class="fa-solid fa-bars" id="toggle"></i>
-            </div>
-            <ul role="list" class="media-navbar" id="nav-list">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#department">Departments</a></li>
-                <li><a href="#doctor">Doctor</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
     <!-- End of Header Section -->
+
+     <section class="hero-section" id="hero">
+     </section>
+    <!-- End of Hero Section -->
+
     <!-- Here we link JavaScript file -->
     <script src="script.js" type="text/javascript"></script>
 </body>
