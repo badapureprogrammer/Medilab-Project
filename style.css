@@ -38,7 +38,7 @@
     --fs-logo:30px
     --fs-navlist:17px
     --fs-icon:20px
-
+    --fs-34:34px;
     /* Padding */
 }
 
@@ -124,7 +124,6 @@ input,button,textarea,select {
 .header-section{
     min-height: 60px;
     padding: 0px;
-    /* border: 1px solid red; */
     background-color: var(--contrast-clr);
     box-shadow: 0px 0px 10px #868282;
 }
@@ -136,7 +135,6 @@ input,button,textarea,select {
 }
 .logo h1 a{
     font-size: 30px;
-    /* font-size: var(--fs-logo); */
     letter-spacing: 0.0125rem;
     color: var(--heading-clr);
     font-family: var(--ff-heading);
@@ -159,9 +157,6 @@ input,button,textarea,select {
     font-weight: var(--fw-500);
     color: var(--heading-clr);
 }
-/* .media-navbar li a:active{
-    color: var(--background-clr);
-} */
 .media-navbar li:first-child{
     margin-left: 0px;
 }
@@ -189,7 +184,6 @@ input,button,textarea,select {
     cursor: pointer;
     font-size: 20px;
 }
-
 .menu-container .fa-bars{
     transition: all 0.3s ease-in;
     transform: rotate(360deg);
@@ -198,6 +192,107 @@ input,button,textarea,select {
     transition: all 0.3s ease-in;
     transform: rotate(90deg);
 }
+/* End of Navbar */
+
+.hero-section{
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/hero-bg.jpg);
+}
+.hero-wrapper{
+    padding: 50px 10px 50px;
+}
+.hero-info{
+    margin-top: 50px;
+}
+.hero-info h2{
+    margin-top: 20px;
+    font-size: var(--fs-48);
+}
+.hero-info p{
+    margin-top: -8px;
+    color: #444444;
+    font-size: var(--fs-24);
+    font-family: var(--ff-default);
+}
+.card-wrapper{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.main-card{
+    width:70%;
+    padding:30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--background-clr);
+}
+.main-card h3{
+    font-size: 34px;
+    margin-bottom: 30px;
+    letter-spacing: 0.025rem;
+    color: var(--contrast-clr);
+}
+.main-card p{
+    margin-bottom: 30px;
+    text-align: justify;
+    letter-spacing: 0.005rem;
+    color: var(--contrast-clr);
+    font-family: var(--ff-default);
+}
+.main-card .main-card-btn button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 6px 25px 8px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.main-card .main-card-btn button a{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: var(--ff-default);
+}
+
+.main-card .main-card-btn button i{
+    margin-left: 5px;
+    color: var(--contrast-clr);
+}
+
+.child-card-parent{
+    display: flex;
+}
+
+.card_2,.card_3,.card_4{
+    padding: 20px;
+    min-width:30%;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.8);
+}
+.fa-calendar-week,.fa-gem,.fa-inbox{
+    font-size: 35px;
+    color: var(--background-clr);
+}
+
+.card_2 h4,.card_3 h4,.card_4 h4{
+    font-size: 20px;
+    margin: 10px 0px 20px;
+}
+
+.card_2 p,.card_3 p,.card_4 p{
+    font-size: 15px;
+    color: #868282;
+    margin: 0px 0px 16px;
+    font-family: var(--ff-default);
+}
+
+
+
 
 @media (min-width: 992px) and (max-width: 1200px) { 
     .media-navbar li,.nav-list li{
@@ -350,5 +445,3 @@ input,button,textarea,select {
     /* End of Navbar */
  }
 /* Apply styles for Mobile Devices */
-
-
