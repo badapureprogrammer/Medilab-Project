@@ -192,7 +192,8 @@ input,button,textarea,select {
     transition: all 0.3s ease-in;
     transform: rotate(90deg);
 }
-/* End of Navbar */
+/* End of Navbar Section */
+
 
 .hero-section{
     height: fit-content;
@@ -250,22 +251,18 @@ input,button,textarea,select {
     padding: 6px 25px 8px;
     background-color: rgb(255, 255, 255, 0.3);
 }
-
 .main-card .main-card-btn button a{
     color: #ffffff;
     font-size: 16px;
     font-family: var(--ff-default);
 }
-
 .main-card .main-card-btn button i{
     margin-left: 5px;
     color: var(--contrast-clr);
 }
-
 .child-card-parent{
     display: flex;
 }
-
 .card_2,.card_3,.card_4{
     padding: 20px;
     min-width:30%;
@@ -278,20 +275,17 @@ input,button,textarea,select {
     font-size: 35px;
     color: var(--background-clr);
 }
-
 .card_2 h4,.card_3 h4,.card_4 h4{
     font-size: 20px;
     margin: 10px 0px 20px;
 }
-
 .card_2 p,.card_3 p,.card_4 p{
     font-size: 15px;
     color: #868282;
     margin: 0px 0px 16px;
     font-family: var(--ff-default);
 }
-
-
+/* End of Hero Section */
 
 
 @media (min-width: 992px) and (max-width: 1200px) { 
@@ -301,9 +295,37 @@ input,button,textarea,select {
     .appointment-section{
         margin-left: 30px;
     }
-    /* End of Navbar */
+    /* End of Navbar Section */
+
+
+    .card-wrapper{
+        display: flex;
+        margin-top: 70px;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .main-card{
+        width:30%;
+        min-height: 126vh;
+        padding:30px;
+    }
+    .child-card-parent{
+        display: flex;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    .card_2,.card_3,.card_4{
+        padding: 20px;
+        min-width:100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    /* End of Hero Section */
+
+
 }
 /* Apply styles for laptops devices */
+
 
 @media (min-width: 769px) and (max-width: 991px) { 
     .header-section{
@@ -348,7 +370,31 @@ input,button,textarea,select {
         margin-left: 25px;
         width: 30px;
     }
-    /* End of Navbar */
+    /* End of Navbar Section */
+
+
+    .card-wrapper{
+        display: flex;
+        margin-top: 70px;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .main-card{
+        width:50%;
+        min-height: 140vh;
+    }
+    .child-card-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_2,.card_3,.card_4{
+        padding: 20px;
+        min-width:80%;
+        margin-bottom: 20px;
+    }
+    /* End of Hero Section */
+
+
 }
 /* Apply styles for ipads & Tablets devices */
 
@@ -396,10 +442,38 @@ input,button,textarea,select {
         width: 30px;
     }
     /* End of Navbar */
+
+
+    .hero-info{
+        margin-top: 40px;
+    }
+    .card-wrapper{
+        display: flex;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+    .main-card{
+        width:100%;
+        min-height: fit-content;
+    }
+    .child-card-parent{
+        width:100%;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .card_2,.card_3,.card_4{
+        padding: 20px;
+        min-width:100% !important;
+        margin: 0;
+        margin-top: 20px;
+    }
+    /* End of Hero Section */
+
 }
 /* Apply styles for ipads & Tablets devices */
 
- @media (min-width: 320px) and (max-width: 479px){
+ @media (max-width: 479px){
     .header-section{
         padding: 10px;
     }
@@ -442,6 +516,37 @@ input,button,textarea,select {
         margin-left: 25px;
         width: 30px;
     }
-    /* End of Navbar */
- }
+    /* End of Navbar Section */
+
+
+    .hero-info{
+        margin-top: 40px;
+    }
+    .card-wrapper{
+        display: flex;
+        margin-top: 70px;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        /* justify-content: space-around; */
+    }
+    .main-card{
+        width:100%;
+        min-height: fit-content;
+    }
+    .child-card-parent{
+        width:100%;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .card_2,.card_3,.card_4{
+        padding: 20px;
+        min-width:100% !important;
+        margin: 0;
+        margin-top: 20px;
+    }
+    /* End of Hero Section */
+
+
+}
 /* Apply styles for Mobile Devices */
